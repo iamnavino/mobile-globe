@@ -24,9 +24,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/hologram/style.css",
+              "src/assets/hologram/example.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/hologram/miniature.earth.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+
+            ]
           },
           "configurations": {
             "production": {

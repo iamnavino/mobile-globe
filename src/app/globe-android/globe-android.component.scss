@@ -1,0 +1,86 @@
+.container-fluid{
+    background: #0d0d0d;
+    // height: 100%;
+    overflow: hidden;
+}
+::ng-deep{
+   html, body{
+        padding-top:0!important
+    }
+    .mobile{
+        app-header{
+            display: none;
+        }
+        app-minified-footer, app-main-footer{
+            display: none;
+        }
+    }
+}
+
+#myearth {
+
+    width: 100%;
+    height: 750px;
+    max-height: 750px;
+    overflow: hidden;
+
+
+	opacity: 0;
+	transition: opacity 1.5s ease-in;
+}
+
+#myearth.earth-ready {
+	opacity: 1;
+}
+
+#myearth::before {
+	content: none;
+}
+
+
+/* background glow */
+
+#glow {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 750px;
+    max-width: 750px;
+    height: 750px;
+    max-height: 750px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgba(0,156,255,0.05) 25%,rgba(0,156,255,0.15) 53%,rgba(0,156,255,0.05) 56%,rgba(0,156,255,0) 70%);
+    z-index: 200;
+	pointer-events: none;
+}
+
+
+@media (min-width: 567px) and (max-width: 967px){
+    #glow {
+        width: 545px;
+        max-width: 545px;
+        height: 545px;
+        max-height: 545px;
+    }  
+    #myearth {
+
+        height: 545px;
+        max-height: 545px;
+
+    }
+}
+
+@media (min-width: 300px) and (max-width: 567px){
+    #glow {
+        width: 290px;
+        max-width: 290px;
+        height: 290px;
+        max-height: 290px;
+    }  
+    #myearth {
+
+        height: 290px;
+        max-height: 290px;
+
+    }
+}
