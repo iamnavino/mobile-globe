@@ -3,9 +3,9 @@
 
 
 #wrapper {
-	margin: 0 auto;
-	max-width: 54em;
-	padding-bottom: 3em;
+    margin: 0 auto;
+    max-width: 54em;
+    overflow: hidden;
 }
 
 #multi-wrapper {
