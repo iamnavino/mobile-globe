@@ -1,7 +1,7 @@
 .container-fluid{
     background: #0d0d0d;
-    // height: 100%;
     overflow: hidden;
+    padding: 0;
 }
 ::ng-deep{
    html, body{
@@ -100,8 +100,8 @@
     }  
     #myearth {
 
-        height: 290px;
-        max-height: 290px;
+        height: 350px;
+        max-height: 350px;
 
     }
 }
