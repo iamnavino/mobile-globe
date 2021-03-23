@@ -37,6 +37,27 @@
 	content: none;
 }
 
+::ng-deep {
+    
+    .earth-container canvas {
+        display:none;
+    }
+    .earth-container canvas {
+        &:last-child {
+            display:block !important;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 750px;
+            max-width: 750px;
+            height: 750px;
+            max-height: 750px;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(ellipse at center, rgba(0,156,255,0.05) 25%,rgba(0,156,255,0.15) 53%,rgba(0,156,255,0.05) 56%,rgba(0,156,255,0) 70%);
+            z-index: 200;
+    }
+}
+}
 
 /* background glow */
 
