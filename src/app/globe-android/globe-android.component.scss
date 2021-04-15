@@ -75,6 +75,46 @@
 	pointer-events: none;
 }
 
+.selected-country{
+    display: flex;
+    height: 30px;
+    width: calc(100% - 100px);
+    h3{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-top: 10px;
+   }
+}
+
+.clear-globe{
+    position: absolute;
+    width: 133px;
+    height: 22px;
+    border: 1px solid #A7A7A7;
+    box-sizing: border-box;
+    border-radius: 80px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #A7A7A7;
+    padding: 0 10px;
+    cursor: pointer;
+    right: 0;
+    margin-top: 10px;
+    img{
+        width: 10px;
+        height: 10px;
+   }
+}
 
 @media (min-width: 567px) and (max-width: 967px){
     #glow {

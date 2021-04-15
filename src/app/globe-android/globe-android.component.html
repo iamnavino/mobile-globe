@@ -1,6 +1,17 @@
 <div class="container-fluid">
+  <div class="col-12">
+    <div class="selected-country">
+        <h3 *ngIf="selectedCountry !== null && selectedCountry !== 'general'">
+            {{ selectedCountry }}
+        </h3>
+        <div class="clear-globe" (click)="clearGlobe()" *ngIf="selectedCountry.length > 0">
+            Clear Selection
+            <img src="assets/hologram/close.png" alt="">
+        </div>
+    </div>
     <div id="wrapper">
         <div id="myearth" #selectElem>
         </div>
     </div>
+  </div>
 </div>

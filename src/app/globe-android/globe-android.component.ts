@@ -5,6 +5,7 @@
 
 
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { WindowService } from '../window.service';
 
 
 declare var Earth: any
@@ -15,7 +16,8 @@ declare var Earth: any
 })
 export class GlobeAndroidComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  constructor() { }
+  constructor(    private ws: WindowService,
+    ) { }
   country = [
     { name: 'Afghanistan', code: 'AF' },
     { name: 'Åland Islands', code: 'AX' },
@@ -470,5 +472,9 @@ export class GlobeAndroidComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnDestroy() {
 
+  }
+
+  clearGlobe() {
+    this.ws.nativeWindow.location.reload();
   }
 }
