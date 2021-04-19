@@ -2,6 +2,9 @@
     background: #0d0d0d;
     overflow: hidden;
     padding: 0;
+    .col-12{
+        padding: 0;
+    }
 }
 ::ng-deep{
    html, body{
@@ -78,7 +81,9 @@
 .selected-country{
     display: flex;
     height: 30px;
-    width: calc(100% - 100px);
+    width: calc(100%);
+    position: absolute;
+    padding: 0 10px;
     h3{
         font-family: Lato;
         font-style: normal;
@@ -93,6 +98,7 @@
 }
 
 .clear-globe{
+  
     position: absolute;
     width: 133px;
     height: 22px;
@@ -108,15 +114,16 @@
     color: #A7A7A7;
     padding: 0 10px;
     cursor: pointer;
-    right: 0;
+    right: 10px;
     margin-top: 10px;
+
     img{
         width: 10px;
         height: 10px;
    }
 }
 
-@media (min-width: 567px) and (max-width: 967px){
+@media (min-width: 567px) and (max-width: 767px){
     #glow {
         width: 545px;
         max-width: 545px;
@@ -131,7 +138,22 @@
     }
 }
 
-@media (min-width: 300px) and (max-width: 567px){
+@media (min-width: 400px) and (max-width: 565px){
+    #glow {
+        width: 330px;
+        max-width: 330px;
+        height: 330px;
+        max-height: 330px;
+    }  
+    #myearth {
+
+        height: 370px;
+        max-height: 370px;
+
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px){
     #glow {
         width: 290px;
         max-width: 290px;
@@ -140,8 +162,8 @@
     }  
     #myearth {
 
-        height: 350px;
-        max-height: 350px;
+        height: 330px;
+        max-height: 330px;
 
     }
 }
