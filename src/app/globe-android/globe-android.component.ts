@@ -459,7 +459,7 @@ export class GlobeAndroidComponent implements OnInit, AfterViewInit, OnDestroy {
     if (section === 'filter') {
       this.selectedCountry = []
       countryId.forEach(element => {
-        this.selectedCountry.push(this.country.filter(i => i.code === element)[0].name)
+        this.selectedCountry.push(' ' + this.country.filter(i => i.code === element)[0].name)
       });
     }
     let data = JSON.stringify({
