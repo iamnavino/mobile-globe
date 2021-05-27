@@ -476,7 +476,7 @@ export class GlobeAndroidComponent implements OnInit, AfterViewInit, OnDestroy {
 
   clearGlobe() {
     let data = JSON.stringify({
-      countryName: [this.selectedCountry]
+      countryName: []
     })
     console.log(data);
   setTimeout(() => {
