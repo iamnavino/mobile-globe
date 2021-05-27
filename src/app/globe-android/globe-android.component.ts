@@ -479,6 +479,7 @@ export class GlobeAndroidComponent implements OnInit, AfterViewInit, OnDestroy {
       countryName: [this.selectedCountry]
     })
     console.log(data);
+  setTimeout(() => {
     this.ws.nativeWindow.location.reload();
-  }
+  }, 1000);  }
 }
